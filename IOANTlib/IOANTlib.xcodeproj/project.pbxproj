@@ -16,6 +16,8 @@
 		C2C4497619DAD10200411086 /* libIOANTlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C4495E19DAD10200411086 /* libIOANTlib.a */; };
 		C2C4497C19DAD10200411086 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2C4497A19DAD10200411086 /* InfoPlist.strings */; };
 		C2C4497E19DAD10200411086 /* IOANTlibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C4497D19DAD10200411086 /* IOANTlibTests.m */; };
+		C2C4499119DAD2B400411086 /* IOANTChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C4498E19DAD2B400411086 /* IOANTChineseToPinyin.m */; };
+		C2C4499219DAD2B400411086 /* IOANTpinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C4498F19DAD2B400411086 /* IOANTpinyin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		C2C4497919DAD10200411086 /* IOANTlibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOANTlibTests-Info.plist"; sourceTree = "<group>"; };
 		C2C4497B19DAD10200411086 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C2C4497D19DAD10200411086 /* IOANTlibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOANTlibTests.m; sourceTree = "<group>"; };
+		C2C4498D19DAD2B400411086 /* IOANTChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOANTChineseToPinyin.h; sourceTree = "<group>"; };
+		C2C4498E19DAD2B400411086 /* IOANTChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOANTChineseToPinyin.m; sourceTree = "<group>"; };
+		C2C4498F19DAD2B400411086 /* IOANTpinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOANTpinyin.m; sourceTree = "<group>"; };
+		C2C4499019DAD2B400411086 /* IOANTpinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOANTpinyin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,7 @@
 		C2C4498719DAD22200411086 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				C2C4498C19DAD2B400411086 /* pinyin */,
 			);
 			name = common;
 			path = IOANTlib/common;
@@ -186,6 +193,17 @@
 			);
 			name = ui;
 			path = IOANTlib/ui;
+			sourceTree = "<group>";
+		};
+		C2C4498C19DAD2B400411086 /* pinyin */ = {
+			isa = PBXGroup;
+			children = (
+				C2C4498D19DAD2B400411086 /* IOANTChineseToPinyin.h */,
+				C2C4498E19DAD2B400411086 /* IOANTChineseToPinyin.m */,
+				C2C4498F19DAD2B400411086 /* IOANTpinyin.m */,
+				C2C4499019DAD2B400411086 /* IOANTpinyin.h */,
+			);
+			path = pinyin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C4499219DAD2B400411086 /* IOANTpinyin.m in Sources */,
 				C2C4496919DAD10200411086 /* IOANTlib.m in Sources */,
+				C2C4499119DAD2B400411086 /* IOANTChineseToPinyin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
